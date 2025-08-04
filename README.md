@@ -68,8 +68,8 @@ If you like this project:
 
 Feel free to reach out or share ideas!
 
-* GitHub: \[Your GitHub Username Here]
-* LinkedIn: \[Optional]
+* GitHub: https://github.com/bhanuprakashyasareni-gif
+* LinkedIn: www.linkedin.com/in/bhanu-prakash-yasareni-002334378
 
 ---
 
