@@ -31,6 +31,22 @@ python TOD.py
 
 ---
 
+## 🖥️ Versions Available
+
+1. **CLI Version** → Run with:
+```bash
+python TOD.py
+```
+GUI Version (Tkinter) → Run with:
+```
+python TOD_GUI.py
+```
+Requires: Pillow library for image handling
+Install with:
+```
+pip install pillow
+```
+
 ## 📁 Project Structure
 
 ```
