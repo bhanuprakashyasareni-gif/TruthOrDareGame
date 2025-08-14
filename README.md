@@ -34,10 +34,12 @@ python TOD.py
 ## 📁 Project Structure
 
 ```
-📦 Truth-or-Dare-Game
-├── TOD.py          # Main Python script
-├── Truths.txt      # List of truth questions
-├── Dares.txt       # List of dares
+📂 TruthOrDareGame
+ ├── TOD.py        # CLI Version
+ ├── TOD_GUI.py    # GUI Version
+ ├── Truths.txt
+ ├── Dares.txt
+ ├── README.md
 ```
 
 ---
