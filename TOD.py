@@ -3,12 +3,12 @@
 print("\n","*"*20,"\n    Truth or Dare ","\n","*"*20,"\n")
 
 players = []   #storing players here 
-with open("My_frist_project(TOD)/Truths.txt","r") as file:  #reading truths from truths.txt file.
+with open("Truths.txt","r") as file:  #reading truths from truths.txt file.
     y = file.readlines()
     k = set(y)
     y = list(k)
 
-with open("My_frist_project(TOD)/Dares.txt","r") as file:  ##reading dares from dares.txt file.
+with open("Dares.txt","r") as file:  ##reading dares from dares.txt file.
     d = file.readlines()
     k = set(d)
     d = list(k)
@@ -197,4 +197,5 @@ while x:
             case _ :
                 print("please select from above options only . ")
         
+
     
