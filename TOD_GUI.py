@@ -97,13 +97,13 @@ def fade_in(widget, duration=1000):
 root = Tk()
 root.title("Truth Or Dare")
 root.geometry("1000x500")
-root.iconbitmap("TruthOrDareGame-main/favicon.ico")
+root.iconbitmap("favicon.ico")
 root.configure(bg=BG_COLOR)
 
 # ============================ SINGLE PLAYER MODE (RANDOM) =====================
 def Truth_fun():
     play_sound(click_sound)
-    with open("TruthOrDareGame-main/Truths.txt","r") as file:
+    with open("Truths.txt","r") as file:
         global y
         y = file.readlines()
         a = random.choice(y)
@@ -111,7 +111,7 @@ def Truth_fun():
 
 def Dare_fun():
     play_sound(click_sound)
-    with open("TruthOrDareGame-main/Dares.txt") as file :
+    with open("Dares.txt") as file :
         global r
         r = file.readlines()
         b = random.choice(r)
@@ -130,11 +130,11 @@ def Exit_fun():
         def submit(e,f):
             play_sound(click_sound)
             if str(e.get()) not in Y:
-                with open("TruthOrDareGame-main/Truths.txt","a") as file :
+                with open("Truths.txt","a") as file :
                     file.write("\n"+e.get())
                     m = Label(root,text="Truth added successfully",fg="green",font=("Arial",15))
                     m.grid(row="10",column="0")
-            with open("TruthOrDareGame-main/Dares.txt") as file :
+            with open("Dares.txt") as file :
                 global r
                 r = file.readlines()
                 if str(f.get()) not in r :
@@ -186,7 +186,7 @@ variable = 0
 
 def display_gif():
     try:
-        img = Image.open("TruthOrDareGame-main/sand-clock.gif")
+        img = Image.open("sand-clock.gif")
     except FileNotFoundError:
         print("Error: 'bottle.gif' not found.")
         return
@@ -291,7 +291,7 @@ def next_player_group():
 
 def Truth_fun1():
     play_sound(click_sound)
-    with open("TruthOrDareGame-main/Truths.txt","r") as file :
+    with open("Truths.txt","r") as file :
         global a
         a = file.readlines()
         z = random.choice(a)
@@ -299,7 +299,7 @@ def Truth_fun1():
 
 def Dare_fun1():
     play_sound(click_sound)
-    with open("TruthOrDareGame-main/Dares.txt") as file :
+    with open("Dares.txt") as file :
         global b
         b = file.readlines()
         y = random.choice(b)
@@ -312,7 +312,7 @@ def exit():
         def submit(e,f):
             play_sound(click_sound)
             if str(e.get()) not in Y:
-                with open("TruthOrDareGame-main/Truths.txt","a") as file :
+                with open("Truths.txt","a") as file :
                     file.write("\n"+e.get())
                     m = Label(root,text="Truth added successfully",fg="green",font=("Arial",15))
                     m.grid(row="10",column="0")
@@ -320,7 +320,7 @@ def exit():
                 global r
                 r = file.readlines()
                 if str(f.get()) not in r :
-                    with open("TruthOrDareGame-main/Dares.txt","a") as file :
+                    with open("Dares.txt","a") as file :
                         file.write("\n"+f.get())
                         m = Label(root,text="Dare added successfully",fg="green",font=("Arial",15))
                         m.grid(row="11",column="0")
@@ -436,3 +436,4 @@ for btn in [Random_button,Group_button]:
 # ============================== START PROGRAM =================================
 play_background_music()
 root.mainloop()
+
