@@ -1,94 +1,71 @@
-# 🎲 Truth or Dare – Python CLI Game
+# 🎲 Truth or Dare – Python Game (CLI & GUI)
 
-Welcome to the **Truth or Dare** command-line game, built with Python!  
-It's a perfect game for parties, sleepovers, or just having fun with friends.  
-Includes 100+ **Truths** and **Dares**, plus the option to add your own!
+Welcome to the **Truth or Dare** game built in Python!  
+This repo now contains **two versions** of the game:
+
+> ✅ CLI version for terminal  
+> ✅ GUI version built with **Tkinter** (with sound effects and icon)
 
 ---
 
 ## 🧠 Features
 
-✅ 100+ preloaded Truth and Dare challenges  
-✅ Add your own questions during the game  
-✅ Two play modes:
-- 🔄 Random Player (bottle spin style)
-- 👥 Group Choice Mode
-
-✅ All content stored in simple `.txt` files for easy editing  
-✅ Fun terminal-based interaction with spinning wait time!
+✅ 100+ preloaded Truth and Dare questions  
+✅ Add your own truths/dares during the game  
+✅ Two play modes (Random / Group)  
+✅ Beginner-friendly and easy to understand  
+✅ GUI version includes sounds and image icon  
+✅ All prompts stored in editable `.txt` files
 
 ---
 
-## 🖥️ How to Run
+## 🚀 How to Run
 
-Make sure you have Python installed.
+### ▶️ CLI Version
 
 ```bash
 python TOD.py
-````
+```
 
-👉 You’ll be prompted to enter number of players, names, and start playing!
-
----
-
-## 🖥️ Versions Available
-
-1. **CLI Version** → Run with:
+🖥️ GUI Version (Tkinter)
 ```bash
-python TOD.py
-```
-GUI Version (Tkinter) → Run with:
-```
 python TOD_GUI.py
 ```
-Requires: Pillow library for image handling
-Install with:
-```
-pip install pillow
-```
 
-## 📁 Project Structure
-
+⚠️ Make sure the following files are in the same folder as TOD_GUI.py:
+```bash
+arduino
+Truths.txt
+Dares.txt
+background_music.mp3
+computer-mouse-click-352734.mp3
+favicon.ico
 ```
+🛠️ Project Structure
+```bash
 📂 TruthOrDareGame
- ├── TOD.py        # CLI Version
- ├── TOD_GUI.py    # GUI Version
- ├── Truths.txt
- ├── Dares.txt
- ├── README.md
+├── TOD.py                      # CLI Version
+├── TOD_GUI.py                  # GUI Version
+├── Truths.txt                  # Truth Questions
+├── Dares.txt                   # Dare Challenges
+├── background_music.mp3        # Sound file for GUI version
+├── computer-mouse-click-352734.mp3   # Click sound for GUI version
+└── favicon.ico                 # Icon for GUI window
 ```
-
----
-
-## 🤝 How to Contribute
-
-Got funny or daring questions? Contribute in 3 ways:
-
-1. Fork this repo 🍴
-2. Add your questions to `Truths.txt` or `Dares.txt`
-3. Submit a Pull Request 🔁
-
-Let’s make this the **biggest Truth or Dare game** on GitHub!
-
----
-
-## 🌟 Show Your Support
-
+🤝 How to Contribute
+```
+Have a funny Truth or Dare idea?
+Feel free to:
+Fork this repo
+Add your truth/dare into the .txt file
+Make a pull request!
+```
+🌟 Show Your Support
+```
 If you like this project:
 
-⭐ **Star the repo**
-👀 **Follow me for more cool Python projects**
-🚀 **Share it with friends who love fun CLI games**
-
----
-
-## 📬 Contact
-
-Feel free to reach out or share ideas!
-
-* GitHub: https://github.com/bhanuprakashyasareni-gif
-* LinkedIn: www.linkedin.com/in/bhanu-prakash-yasareni-002334378
-
----
-
-Made with ❤️ in Python.
+⭐ Star this repo to support
+👀 Follow me for more fun Python projects
+🔁 Share with your friends & coding buddies
+```
+Made with ❤️ in Python
